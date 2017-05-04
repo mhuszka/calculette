@@ -32,10 +32,14 @@ for(i=0; i<chiffreClavier.length; i++) {
 var touche = document.querySelectorAll(".touche");
 
 
+
 function chiffreChoisi() {
+    var longText = input.value;
     
-    var chiffreValeur = this.innerHTML;
-    input.value += chiffreValeur;
+    if (longText.length < 8){
+        var chiffreValeur = this.innerHTML;
+        input.value += chiffreValeur;
+    }
 }
 
 /*var multiplie = touche[12];
