@@ -28,6 +28,8 @@ for(i=0; i<chiffreClavier.length; i++) {
 }
 
 // déclaration d'une fonction
+var touche = document.querySelectorAll(".touche");
+
 
 function chiffreChoisi() {
     
@@ -35,11 +37,30 @@ function chiffreChoisi() {
     input.value += chiffreValeur;
 }
 
+/*var multiplie = touche[12];
+
+multiplie.addEventListener("click", fonctionFois);
+
+
+function fonctionFois() {
+    var x = touche[12].innerHTML;
+    x = x.replace('x','*');
+    console.log(x);
+}*/
+
 var btnEgal = document.querySelector(".egal");
 
 btnEgal.addEventListener('click', afficheResultat);
 
 function afficheResultat() {
+  
+    if(touche.includes([12]))
+    console.log("true");
     
-    input.value += "=" + eval(input.value);   
+//    input.value += "=" + eval(input.value);
+    
 }
+
+
+
+
