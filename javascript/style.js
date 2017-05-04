@@ -36,11 +36,10 @@ function chiffreChoisi() {
 }
 
 var btnEgal = document.querySelector(".egal");
-console.log(btnEgal);
 
 btnEgal.addEventListener('click', afficheResultat);
 
 function afficheResultat() {
     
-    input.value += eval(input.value);   
+    input.value += "=" + eval(input.value);   
 }
