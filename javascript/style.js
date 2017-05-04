@@ -55,12 +55,67 @@ btnEgal.addEventListener('click', afficheResultat);
 
 function afficheResultat() {
   
-    if(touche.includes([12]))
-    console.log("true");
+/*    if(touche.includes([12]))
+    console.log("true");*/
     
-//    input.value += "=" + eval(input.value);
+    input.value += "=" + eval(input.value);
     
 }
+
+
+// FONCTION EFFACE TOUT
+var clear = document.querySelector('.clear');
+
+clear.addEventListener('click', effaceTout);
+
+function effaceTout(){
+    input.value="";
+    document.body.style.backgroundImage = "url('./calculatrice_enfant-05.svg')";
+}
+
+
+//FONCTIONS CHANGE BACKGROUND
+
+var divi = touche[13];
+var fois = touche[12];
+var moins = touche[10];
+var plus = touche[11];
+var bgBody = document.querySelector("body");
+
+
+function afficheBg(){
+    document.body.style.backgroundImage = "url('./calculatrice_enfant-05.svg')";
+
+}
+afficheBg();
+
+
+plus.addEventListener('click', changefondplus);
+
+function changefondplus(){
+    document.body.style.backgroundImage = "url('./plus-01.svg')";
+}
+
+moins.addEventListener('click', changefondmoins);
+
+function changefondmoins(){
+    document.body.style.backgroundImage = "url('./mois-01.svg')";
+}
+
+
+fois.addEventListener('click', changefondfois);
+
+function changefondfois(){
+    document.body.style.backgroundImage = "url('./fois-01.svg')";
+}
+
+
+divi.addEventListener('click', changefonddivi);
+
+function changefonddivi(){
+    document.body.style.backgroundImage = "url('./divi-01.svg')";
+}
+
 
 
 

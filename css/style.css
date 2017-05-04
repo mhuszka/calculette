@@ -1,15 +1,21 @@
- body {
+html{
+    height:100%;
+    width: 100%;
+}
+
+
+body {
     font-family: "Comfortaa";
      font-weight: 800;
      font-size: 1.5em;
     margin:0;    
     padding:0;
-    background-image: url(../images/calculatrice_enfant-05.svg);
+    /*background-image: url(../images/calculatrice_enfant-05.svg);*/
     width: auto;
-    height: 90vh;
+    height: 100%;
     background-size: cover;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -23,7 +29,7 @@
     
     width: 66vw;
     max-width: 600px;
-    height: 80%;
+    height: 70%;
     
     background-color: #F9FBFF;
     border: 10px solid #3d3d3d;
@@ -56,11 +62,12 @@
     width: 16%;
     height: 14%;
     box-sizing: border-box;
-    padding-top: 2.5%;    
+    padding-top: 1vh;    
     text-align: center;
     border: 5px solid #E2E2E2;
     border-radius: 12%;
     margin: 0.25em;
+    cursor: pointer;
 }
 
 .egal{
@@ -80,10 +87,33 @@ input{
     
     box-sizing: border-box;
     padding: 3%;
+    padding-left: 6%;
     margin-top: 2%;
     width: 92%;
     height: 25%;
     
     border: 5px solid #E2E2E2;
     border-radius: 0.3em;
+    letter-spacing: 1.2vw;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.affiche{
+    opacity: 1;
+}
+
+.clear{
+   font-family: "Comfortaa";
+    font-weight: 800;
+    font-size: 2.5vh;
+    box-sizing: border-box;
+    text-align: center;
+    border: 5px solid #E2E2E2;
+    border-radius: 0.3em;
+    margin: 1vh;
+    padding: 2vh;
+    cursor: pointer;
 }
