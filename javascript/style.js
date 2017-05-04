@@ -5,7 +5,7 @@
 
 var clavier = document.querySelector(".clavier");
 
-for(char of "123456789-+x/"){
+for(char of "1234567890-+x/"){
 
     clavier.innerHTML += "<div class='touche'>" + char + "</div>";   
 }
