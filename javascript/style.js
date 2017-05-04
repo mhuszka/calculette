@@ -11,6 +11,7 @@ for(char of "1234567890-+x/"){
 }
 var equal = document.createElement("button")
 equal.setAttribute('class', 'egal');
+equal.innerHTML = "=";
 document.body.querySelector(".clavier").appendChild(equal);
 
 // CALCULATRICE
