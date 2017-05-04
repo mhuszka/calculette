@@ -37,7 +37,7 @@ function chiffreChoisi() {
     input.value += chiffreValeur;
 }
 
-/*var multiplie = touche[12];
+var multiplie = touche[12];
 
 multiplie.addEventListener("click", fonctionFois);
 
@@ -46,7 +46,7 @@ function fonctionFois() {
     var x = touche[12].innerHTML;
     x = x.replace('x','*');
     console.log(x);
-}*/
+}
 
 var btnEgal = document.querySelector(".egal");
 
@@ -54,13 +54,19 @@ btnEgal.addEventListener('click', afficheResultat);
 
 function afficheResultat() {
   
-    if(touche.includes([12]))
-    console.log("true");
-    
-//    input.value += "=" + eval(input.value);
+    if(input.value.includes([12])) {
+        var multi = fonctionFois();
+        console.log(afficheResultat);
+    }
+
+
+    /*if(input.value.includes([12])) {
+        var x2 = fonctionFois;
+            x = x.replace('x','*');
+        }*/
+        input.value += "=" + (eval(input.value));
     
 }
-
-
-
-
+       
+    
+    
